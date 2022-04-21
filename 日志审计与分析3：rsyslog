@@ -5,5 +5,6 @@ rsyslog进程可以从网络中收集其它主机上的日志数据，这些主�
 1、	配置rsyslog服务器
 
 (1)备份rsyslog的默认配置文件。
-		cp /etc/rsyslog.conf /etc/rsyslog.conf_default
+管理员权限：cp /etc/rsyslog.conf /etc/rsyslog.conf_default
 （2）取消如下两行的注释，开启UDP514接收配置
+打开配置文件：vi /etc/rsyslog.conf
