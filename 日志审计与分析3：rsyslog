@@ -1,0 +1,9 @@
+实验目的：1、掌握rsyslog配置方法
+          2、配置rsyslog服务收集其他Linux服务器日志
+          
+rsyslog进程可以从网络中收集其它主机上的日志数据，这些主机会将日志配置为发送到另外的远程服务器.
+1、	配置rsyslog服务器
+
+(1)备份rsyslog的默认配置文件。
+		cp /etc/rsyslog.conf /etc/rsyslog.conf_default
+（2）取消如下两行的注释，开启UDP514接收配置
